@@ -68,7 +68,7 @@ const Navbar = ({ clicked, setClicked }) => {
   return (
     <>
       <div
-        className={`z-50 max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 ${
+        className={`z-[50] fixed top-0 left-0 right-0 w-full ${
           sticky
             ? "sticky-navbar shadow-lg bg-base-500 duration-300 transition-all ease-in-out"
             : ""
@@ -104,10 +104,12 @@ const Navbar = ({ clicked, setClicked }) => {
                 {navItems}
               </ul>
             </div>
-            <Link to={"/"} className="text-3xl font-bold cursor-pointer mt-1 ml-[-10%]"
-            onClick={() => setClicked("home")}
+            <Link
+              to={"/"}
+              className="text-3xl font-bold cursor-pointer mt-1 ml-4"
+              onClick={() => setClicked("home")}
             >
-            Med<span className="text-accent">Guide</span>
+              Med<span className="text-accent">Guide</span>
             </Link>
           </div>
           <div className="navbar-end gap-3">
@@ -118,7 +120,7 @@ const Navbar = ({ clicked, setClicked }) => {
             {authUser ? (
               <Logout />
             ) : (
-              <div className="">
+              <div className="flex mr-5">
                 <a
                   className="btn btn-accent text-black px-6"
                   onClick={() =>
@@ -127,7 +129,9 @@ const Navbar = ({ clicked, setClicked }) => {
                 >
                   Login
                 </a>
-                <Login />
+                <div >
+                  <Login />
+                </div>
               </div>
             )}
           </div>

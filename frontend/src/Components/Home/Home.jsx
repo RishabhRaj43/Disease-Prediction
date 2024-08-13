@@ -2,17 +2,24 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="max-w-screen-sm container mx-auto md:px-20 px-4 mt-36 space-y-5 mb-16">
-      <h1>Home</h1>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam sit
-        voluptatum dolorum architecto laborum ea debitis at suscipit recusandae
-        laudantium in animi, officiis nisi mollitia aut autem consequatur. Optio
-        animi cum, fuga explicabo, commodi quae delectus necessitatibus labore
-        pariatur culpa, architecto esse tempora. Repudiandae dignissimos maxime
-        ea odio pariatur sed? Nobis officia quis vero non quidem, deserunt quasi
-        eveniet, aperiam, eos incidunt beatae omnis?
-      </p>
+    <div className="max-w-screen container pl-0 pr-0">
+      <div className="relative">
+        <img className="object-cover w-full h-full" src="/home.gif" alt="" />
+        <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white p-6">
+          <div className="left mb-4">
+            <h1 className="text-5xl font-bold">
+              Welcome to <span className="text-accent">Movie</span>{" "}
+              Recommendation System
+            </h1>
+          </div>
+          <div className="right">
+            <p className="text-xl text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              libero dolores nostrum veritatis amet quasi aliquam?
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
