@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .custom-img {
+    margin-top: 100px;
+    width: 25rem; /* or any other value */
+    height: 25rem; /* or any other value */
+  }
+  
+  /* Customize the color of the inactive dots */
+  .slick-dots li button:before {
+    color: #cccccc; /* Change this to the desired color for inactive dots */
+    opacity: 0.5; /* Adjust the opacity as needed */
+  }
+  
+  /* Customize the color of the active dot */
+  .slick-dots li.slick-active button:before {
+    color: #77E4C8; /* Change this to the desired color for the active dot */
+    opacity: 1; /* Set opacity to 1 for full color */
+  }
+  
+  .react-hot-toast{
+    z-index: 9999;
+  }
