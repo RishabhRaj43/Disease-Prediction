@@ -8,11 +8,12 @@ const Contact = () => {
     name: "",
     fromMail: "",
     subject: "",
+    username: "",
   });
 
   const handleChange = async (e) => {
     const { value, name } = e.target;
-    
+
     setFormData({
       ...formData,
       [name]: value,
@@ -30,6 +31,7 @@ const Contact = () => {
         name: "",
         fromMail: "",
         subject: "",
+        username: "",
       });
 
       console.log(res.data);
@@ -98,7 +100,12 @@ const Contact = () => {
           >
             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
           </svg>
-          <input type="textarea" className="grow" placeholder="Username" />
+          <input type="textarea" className="grow" placeholder="Username" 
+          name="username"
+          value={formData.username}
+          onChange={handleChange}
+          required
+          />
         </label>
 
         <textarea

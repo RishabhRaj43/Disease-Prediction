@@ -32,8 +32,8 @@ const mailController = async (req, res) => {
     `;
 
     await transporter.sendMail({
-      from: `${fromMail}`,
-      to: auth,
+      from: auth,
+      to: `${fromMail}`,
       subject: "From " + name,
       html: html,
     });
