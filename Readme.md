@@ -17,7 +17,7 @@ A web application that predicts diseases based on user-input symptoms. Built usi
 - **Database:** - MongoDB
 
 ------------------------
-> *Note 📢* :- Currently in Development
+> *Note 📢* :- Currently in Development but the prediction system is working.
 
 -----------------------------------
 # Happy Coding 🤖👾
